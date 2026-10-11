@@ -1,0 +1,521 @@
+{
+  "data": "Synthetic fixed-design linear IV model; no private or external observations.",
+  "replicates": 3000,
+  "n": 200,
+  "seed": 20261011,
+  "true_beta": 1.0,
+  "error_correlation": 0.8,
+  "alpha": 0.05,
+  "excluded_instruments": 2,
+  "included_controls": "intercept only",
+  "simulation_design": "Same fixed instruments and paired innovations across scenarios; independent draws within each scenario.",
+  "endpoint_encoding": "A null lower endpoint is -infinity; a null upper endpoint is +infinity. An empty list is an empty set.",
+  "instrument_gram_divided_by_n": [
+    [
+      1.0000000000000007,
+      -2.7755575615628914e-17
+    ],
+    [
+      -2.7755575615628914e-17,
+      1.0
+    ]
+  ],
+  "scenarios": [
+    {
+      "scenario": "zero_strength",
+      "concentration_parameter": 0.0,
+      "direct_effect_on_second_instrument": 0.0,
+      "exclusion_restriction_valid_by_construction": true,
+      "analytic_ar_coverage_under_generator": 0.95,
+      "analytic_ar_unbounded_probability_under_generator": 0.95,
+      "ar_coverage": {
+        "estimate": 0.9443333333333334,
+        "mcse": 0.004186701858716583,
+        "count": 3000
+      },
+      "wald_coverage": {
+        "estimate": 0.687,
+        "mcse": 0.008467638413400754,
+        "count": 3000
+      },
+      "paired_ar_minus_wald_coverage": {
+        "estimate": 0.25733333333333336,
+        "mcse": 0.00803832839751694,
+        "count": 3000
+      },
+      "ar_set_shape_counts": {
+        "bounded": 157,
+        "two_rays": 310,
+        "all_real": 2531,
+        "empty": 2,
+        "left_ray": 0,
+        "right_ray": 0
+      },
+      "ar_unbounded_fraction": 0.947,
+      "coverage_conditional_on_ar_shape": {
+        "bounded": {
+          "estimate": 0.535031847133758,
+          "mcse": 0.0399336605081411,
+          "count": 157
+        },
+        "two_rays": {
+          "estimate": 0.7032258064516129,
+          "mcse": 0.02598850079241181,
+          "count": 310
+        },
+        "all_real": {
+          "estimate": 1.0,
+          "mcse": 0.0,
+          "count": 2531
+        },
+        "empty": {
+          "estimate": 0.0,
+          "mcse": 0.0,
+          "count": 2
+        },
+        "left_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "right_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        }
+      },
+      "bounded_ar_length_median_conditional_on_bounded": 3.0207087396923025,
+      "wald_length_median": 2.4184192050832367,
+      "first_stage_f_median": 0.6932244062220921,
+      "first_stage_f_quantiles_10_90": [
+        0.10005113848285421,
+        2.4097104420910505
+      ]
+    },
+    {
+      "scenario": "weak",
+      "concentration_parameter": 4.0,
+      "direct_effect_on_second_instrument": 0.0,
+      "exclusion_restriction_valid_by_construction": true,
+      "analytic_ar_coverage_under_generator": 0.95,
+      "analytic_ar_unbounded_probability_under_generator": 0.5901120282960541,
+      "ar_coverage": {
+        "estimate": 0.9443333333333334,
+        "mcse": 0.004186701858716583,
+        "count": 3000
+      },
+      "wald_coverage": {
+        "estimate": 0.8316666666666667,
+        "mcse": 0.006832371562968861,
+        "count": 3000
+      },
+      "paired_ar_minus_wald_coverage": {
+        "estimate": 0.11266666666666666,
+        "mcse": 0.006683750479318197,
+        "count": 3000
+      },
+      "ar_set_shape_counts": {
+        "bounded": 1166,
+        "two_rays": 1503,
+        "all_real": 298,
+        "empty": 33,
+        "left_ray": 0,
+        "right_ray": 0
+      },
+      "ar_unbounded_fraction": 0.6003333333333334,
+      "coverage_conditional_on_ar_shape": {
+        "bounded": {
+          "estimate": 0.9408233276157805,
+          "mcse": 0.006912996644049817,
+          "count": 1166
+        },
+        "two_rays": {
+          "estimate": 0.9567531603459747,
+          "mcse": 0.00524858426881704,
+          "count": 1503
+        },
+        "all_real": {
+          "estimate": 1.0,
+          "mcse": 0.0,
+          "count": 298
+        },
+        "empty": {
+          "estimate": 0.0,
+          "mcse": 0.0,
+          "count": 33
+        },
+        "left_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "right_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        }
+      },
+      "bounded_ar_length_median_conditional_on_bounded": 2.4881633217134604,
+      "wald_length_median": 1.5285882053791684,
+      "first_stage_f_median": 2.5159261538094273,
+      "first_stage_f_quantiles_10_90": [
+        0.5293894984063954,
+        6.013953136386053
+      ]
+    },
+    {
+      "scenario": "intermediate",
+      "concentration_parameter": 16.0,
+      "direct_effect_on_second_instrument": 0.0,
+      "exclusion_restriction_valid_by_construction": true,
+      "analytic_ar_coverage_under_generator": 0.95,
+      "analytic_ar_unbounded_probability_under_generator": 0.046117904626700026,
+      "ar_coverage": {
+        "estimate": 0.9443333333333334,
+        "mcse": 0.004186701858716583,
+        "count": 3000
+      },
+      "wald_coverage": {
+        "estimate": 0.9086666666666666,
+        "mcse": 0.0052605205265818245,
+        "count": 3000
+      },
+      "paired_ar_minus_wald_coverage": {
+        "estimate": 0.035666666666666666,
+        "mcse": 0.00561028908640748,
+        "count": 3000
+      },
+      "ar_set_shape_counts": {
+        "bounded": 2800,
+        "two_rays": 154,
+        "all_real": 0,
+        "empty": 46,
+        "left_ray": 0,
+        "right_ray": 0
+      },
+      "ar_unbounded_fraction": 0.051333333333333335,
+      "coverage_conditional_on_ar_shape": {
+        "bounded": {
+          "estimate": 0.9689285714285715,
+          "mcse": 0.0032796314514426154,
+          "count": 2800
+        },
+        "two_rays": {
+          "estimate": 0.7792207792207793,
+          "mcse": 0.033532323343787154,
+          "count": 154
+        },
+        "all_real": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "empty": {
+          "estimate": 0.0,
+          "mcse": 0.0,
+          "count": 46
+        },
+        "left_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "right_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        }
+      },
+      "bounded_ar_length_median_conditional_on_bounded": 1.5054636100104064,
+      "wald_length_median": 0.911435817821795,
+      "first_stage_f_median": 8.543803555836721,
+      "first_stage_f_quantiles_10_90": [
+        3.9667798339407394,
+        14.717395172957184
+      ]
+    },
+    {
+      "scenario": "strong",
+      "concentration_parameter": 100.0,
+      "direct_effect_on_second_instrument": 0.0,
+      "exclusion_restriction_valid_by_construction": true,
+      "analytic_ar_coverage_under_generator": 0.95,
+      "analytic_ar_unbounded_probability_under_generator": 1.8720576671232535e-14,
+      "ar_coverage": {
+        "estimate": 0.9443333333333334,
+        "mcse": 0.004186701858716583,
+        "count": 3000
+      },
+      "wald_coverage": {
+        "estimate": 0.9443333333333334,
+        "mcse": 0.004186701858716582,
+        "count": 3000
+      },
+      "paired_ar_minus_wald_coverage": {
+        "estimate": 0.0,
+        "mcse": 0.004472881497382853,
+        "count": 3000
+      },
+      "ar_set_shape_counts": {
+        "bounded": 2951,
+        "two_rays": 0,
+        "all_real": 0,
+        "empty": 49,
+        "left_ray": 0,
+        "right_ray": 0
+      },
+      "ar_unbounded_fraction": 0.0,
+      "coverage_conditional_on_ar_shape": {
+        "bounded": {
+          "estimate": 0.9600135547272111,
+          "mcse": 0.0036073150476912948,
+          "count": 2951
+        },
+        "two_rays": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "all_real": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "empty": {
+          "estimate": 0.0,
+          "mcse": 0.0,
+          "count": 49
+        },
+        "left_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "right_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        }
+      },
+      "bounded_ar_length_median_conditional_on_bounded": 0.47905605815943164,
+      "wald_length_median": 0.3860432493514237,
+      "first_stage_f_median": 50.67548814774483,
+      "first_stage_f_quantiles_10_90": [
+        37.09154242373029,
+        66.5518664541603
+      ]
+    },
+    {
+      "scenario": "invalid_exclusion",
+      "concentration_parameter": 100.0,
+      "direct_effect_on_second_instrument": 0.35,
+      "exclusion_restriction_valid_by_construction": false,
+      "analytic_ar_coverage_under_generator": 0.004556416668041242,
+      "analytic_ar_unbounded_probability_under_generator": 1.8720576671232535e-14,
+      "ar_coverage": {
+        "estimate": 0.006,
+        "mcse": 0.001410199591415772,
+        "count": 3000
+      },
+      "wald_coverage": {
+        "estimate": 0.9313333333333333,
+        "mcse": 0.004617823435661672,
+        "count": 3000
+      },
+      "paired_ar_minus_wald_coverage": {
+        "estimate": -0.9253333333333333,
+        "mcse": 0.0047998122794359836,
+        "count": 3000
+      },
+      "ar_set_shape_counts": {
+        "bounded": 66,
+        "two_rays": 0,
+        "all_real": 0,
+        "empty": 2934,
+        "left_ray": 0,
+        "right_ray": 0
+      },
+      "ar_unbounded_fraction": 0.0,
+      "coverage_conditional_on_ar_shape": {
+        "bounded": {
+          "estimate": 0.2727272727272727,
+          "mcse": 0.05524032911365454,
+          "count": 66
+        },
+        "two_rays": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "all_real": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "empty": {
+          "estimate": 0.0,
+          "mcse": 0.0,
+          "count": 2934
+        },
+        "left_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        },
+        "right_ray": {
+          "estimate": null,
+          "mcse": null,
+          "count": 0
+        }
+      },
+      "bounded_ar_length_median_conditional_on_bounded": 0.3012603032601651,
+      "wald_length_median": 0.40957017581379646,
+      "first_stage_f_median": 50.67548814774483,
+      "first_stage_f_quantiles_10_90": [
+        37.09154242373029,
+        66.5518664541603
+      ]
+    }
+  ],
+  "first_occurrence_examples": {
+    "all_real": {
+      "scenario": "zero_strength",
+      "zero_based_draw": 0,
+      "ar_set": {
+        "kind": "all_real",
+        "unbounded": true,
+        "intervals": [
+          [
+            null,
+            null
+          ]
+        ]
+      },
+      "quadratic_coefficients": [
+        -6.237638587802821,
+        22.643995580141755,
+        -22.71231106680508
+      ],
+      "first_stage_f": 0.07604899029406537,
+      "wald": {
+        "estimate": 2.8280634673199447,
+        "standard_error": 2.9678079268242747,
+        "interval": [
+          -2.9887331822881196,
+          8.644860116928008
+        ]
+      },
+      "ar_test_at_truth": {
+        "statistic": 0.2582824026645436,
+        "critical_value": 3.041753029984688,
+        "p_value": 0.772638216610082,
+        "accepted": true,
+        "degenerate_residual": false
+      }
+    },
+    "two_rays": {
+      "scenario": "zero_strength",
+      "zero_based_draw": 2,
+      "ar_set": {
+        "kind": "two_rays",
+        "unbounded": true,
+        "intervals": [
+          [
+            null,
+            -1.3261111977357136
+          ],
+          [
+            0.9522371071679632,
+            null
+          ]
+        ]
+      },
+      "quadratic_coefficients": [
+        -0.5917089119130043,
+        -0.22122463132230763,
+        0.7471936181328047
+      ],
+      "first_stage_f": 2.7410419940681767,
+      "wald": {
+        "estimate": 2.0000552375922904,
+        "standard_error": 0.28622671099658964,
+        "interval": [
+          1.43906119262562,
+          2.561049282558961
+        ]
+      },
+      "ar_test_at_truth": {
+        "statistic": 3.0088654979684533,
+        "critical_value": 3.041753029984688,
+        "p_value": 0.051621101682378774,
+        "accepted": true,
+        "degenerate_residual": false
+      }
+    },
+    "bounded": {
+      "scenario": "zero_strength",
+      "zero_based_draw": 31,
+      "ar_set": {
+        "kind": "bounded",
+        "unbounded": false,
+        "intervals": [
+          [
+            1.402715057037514,
+            6.380006860538725
+          ]
+        ]
+      },
+      "quadratic_coefficients": [
+        0.6287060255451538,
+        -4.8930441647225145,
+        5.626498756395307
+      ],
+      "first_stage_f": 3.322195998009509,
+      "wald": {
+        "estimate": 2.0062612590822906,
+        "standard_error": 0.22532686058771664,
+        "interval": [
+          1.5646287275808881,
+          2.4478937905836933
+        ]
+      },
+      "ar_test_at_truth": {
+        "statistic": 3.649985297501133,
+        "critical_value": 3.041753029984688,
+        "p_value": 0.02776484930619865,
+        "accepted": false,
+        "degenerate_residual": false
+      }
+    },
+    "empty": {
+      "scenario": "zero_strength",
+      "zero_based_draw": 295,
+      "ar_set": {
+        "kind": "empty",
+        "unbounded": false,
+        "intervals": []
+      },
+      "quadratic_coefficients": [
+        1.3634191455631486,
+        -3.6248009783394117,
+        2.459624193814051
+      ],
+      "first_stage_f": 3.7651277630854314,
+      "wald": {
+        "estimate": 1.6855633083389339,
+        "standard_error": 0.22030821233022999,
+        "interval": [
+          1.25376714667328,
+          2.1173594700045877
+        ]
+      },
+      "ar_test_at_truth": {
+        "statistic": 3.1534873916298842,
+        "critical_value": 3.041753029984688,
+        "p_value": 0.04486667495249808,
+        "accepted": false,
+        "degenerate_residual": false
+      }
+    }
+  }
+}

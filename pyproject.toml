@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weak-instrument-confidence-sets"
+version = "0.1.0"
+description = "Analytic Anderson-Rubin confidence sets and a reproducible weak-instrument inference experiment"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["numpy>=2.1,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+weak-iv-audit = "weak_iv.experiment:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
